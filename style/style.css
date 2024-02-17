@@ -24,6 +24,31 @@
     padding: 0;
 }
 
+.interface {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--cor0);
+    
+}
+
+.top-header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
 
 /* MENU MOBILE */
 .menu-mobile {
@@ -93,3 +118,4 @@
 .menu-mobile.abrir-menu .overlay-menu {
     display: block;
 }
+
