@@ -17,6 +17,8 @@
     --fonte-sora: 'Sora', cursive;
 }
 
+/*CSS GERAL*/
+
 * {
     box-sizing: border-box;
     font-family: var(--fonte-poppins);
@@ -35,22 +37,94 @@ header {
 }
 
 .top-header {
-    align-items: center;
     background-color: #fff;
+    margin-top: 20px;
+}
+
+.top-header .interface {
+    align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+.top-header .btn-header button {
+    background-color: transparent;
+    border: 1px solid var(--cor1);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: .8s;
+}
+
+.top-header .btn-header button:hover {
+    background-color: var(--cor1);
+}
+
+.top-header .btn-header button a {
+    color: var(--cor1);
+    font-size: 20px;
+    padding: 13px;
+    transition: .5s;
+}
+
+.top-header .btn-header button a:hover {
+    color: var(--cor4);
+}
+
+.top-header .btn-header button i.bi-whatsapp:hover {
+    color: springgreen;
+}
+
+.bottom-header nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+    color: var(--cor1);
+    display: block;
+    font-weight: bolder;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.bottom-header nav ul li a:hover {
+    color: var(--cor2);
+}
+
+.drop-hover {
+    position: relative;
+}
+
+.drop-hover .drop {
+    background-color: var(--cor0);
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    transition: .5s;
+}
+
+.drop-hover:hover .drop {
+    height: 210px;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+}
+
+
+p {
+    text-align: justify;
 }
 
 
 
 
-
-
-
-
-
-
-/* MENU MOBILE */
+/* MENU MOBILE
 .menu-mobile {
     background-color: #3b280d;
     height: 100vh;
@@ -117,5 +191,5 @@ header {
 
 .menu-mobile.abrir-menu .overlay-menu {
     display: block;
-}
+} */
 
