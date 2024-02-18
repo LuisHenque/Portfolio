@@ -36,6 +36,41 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 35px;
+}
+
+h1 span {
+    color: var(--cor4);
+    font-size: 60px;
+}
+
+p {
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+.btn-contato button {
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    transition: .5s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 5px #000;
+    transform: scale(1.1);
+}
+
 /* BLOCO DO HEADER */
 
 header {
@@ -71,7 +106,7 @@ header nav ul li {
 }
 
 
-header .btn-contato button {
+.btn-contato button {
     background-color: var(--cor2);
     border: none;
     border-radius: 30px;
@@ -81,8 +116,35 @@ header .btn-contato button {
     padding: 10px 30px;
 }
 
-header .btn-contato button:hover {
+.btn-contato button:hover {
     box-shadow: 0px 0px 5px #000;
+}
+
+/* BLOCO TOP MAIN */
+
+section.top-main {
+    padding: 40px 4%;
+}
+
+section.top-main .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+section.top-main .img-top-main img {
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 30px;
+    position: relative;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
 }
 
 
